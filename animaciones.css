@@ -1,0 +1,62 @@
+/*Navegación*/
+nav ul li a, footer a {
+    transition: .2s ease-out;
+}
+
+nav ul li a:hover, nav ul li a:active, footer a:hover, footer a:active {
+    color: #ee0;
+    border-bottom-color: transparent;
+}
+
+/*Cuerpo*/
+details {
+    transition: .2s ease-out;
+}
+
+details:hover {
+    cursor: pointer;
+    transform: translate(0, -2%);
+    box-shadow: 0 0 20px black;
+}
+
+/*Cuerpo: Artículos*/
+.card {
+    transition: .2s ease-out;
+}
+
+.card:hover, .card:active {
+    transform: translate(0, -2%);
+    box-shadow: 0 0 20px black;
+}
+
+/*Cuerpo: Galería*/
+.overlay {
+    animation: fade-in .2s linear;
+}
+
+.overlay:active {
+    animation: fade-out .2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/*Responsive*/
+@media (min-width: 56.25em) {
+    .galeria img {
+        transition: .2s ease-out;
+    }
+    
+    .galeria img:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+}
